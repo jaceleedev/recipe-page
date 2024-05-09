@@ -13,7 +13,9 @@
 }
 
 :root {
+  --dark-raspberry: #7a284e;
   --white: #ffffff;
+  --snow: #fff7fb;
   --eggshell: #f3e5d7;
   --wenge-brown: #5f564d;
   --dark-charcoal: #312e2c;
@@ -37,6 +39,11 @@ body {
   align-items: center;
 
   background: var(--eggshell);
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 .recipe-page {
@@ -70,7 +77,7 @@ body {
   gap: 24px;
 }
 
-.header h1 {
+.header > h1 {
   font-family: 'Young serif', sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -79,11 +86,76 @@ body {
   line-height: 100%;
 }
 
-.header p {
+.header > p {
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   color: var(--wenge-brown);
   line-height: 150%;
+}
+
+.preparation-time {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 28px;
+
+  border-radius: 12px;
+  background-color: var(--snow);
+}
+
+.preparation-time > h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--dark-raspberry);
+  line-height: 100%;
+}
+
+.preparation-time > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.preparation-time > ul > li {
+  display: flex;
+
+  padding-left: 8px;
+
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--wenge-brown);
+  line-height: 150%;
+}
+
+.preparation-time > ul > li > .bullet {
+  position: relative;
+
+  width: 16px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.preparation-time > ul > li > .bullet::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background-color: var(--dark-raspberry);
+}
+
+.preparation-time > ul > li > .strong {
+  font-weight: 700;
 }
