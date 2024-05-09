@@ -24,9 +24,8 @@ body {
 }
 
 .recipe-page {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 300px 1288px;
+  display: flex;
+  flex-direction: column;
   gap: 40px;
 
   width: 736px;
