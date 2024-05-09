@@ -41,3 +41,9 @@ body {
 
   border-radius: 12px;
 }
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
