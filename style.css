@@ -165,17 +165,20 @@ hr {
   background-color: var(--dark-raspberry);
 }
 
-.preparation-time > ul > li > .strong {
+.preparation-time > ul > li > .strong,
+.instructions > ul > li .strong {
   font-weight: 700;
 }
 
-.ingredients {
+.ingredients,
+.instructions {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.ingredients > h2 {
+.ingredients > h2,
+.instructions > h2 {
   font-family: 'Young Serif', sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -184,13 +187,15 @@ hr {
   line-height: 100%;
 }
 
-.ingredients > ul {
+.ingredients > ul,
+.instructions > ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.ingredients > ul > li {
+.ingredients > ul > li,
+.instructions > ul > li {
   display: flex;
 
   padding-left: 8px;
@@ -211,6 +216,17 @@ hr {
   margin-right: 16px;
 }
 
+.number {
+  min-width: 16px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.instructions > ul > li > .number {
+  font-weight: 700;
+  color: var(--brandy-red);
+}
+
 .ingredients > ul > li > .bullet::before {
   content: '';
   position: absolute;
@@ -222,5 +238,5 @@ hr {
   height: 4px;
 
   border-radius: 50%;
-  background-color: var(--dark-raspberry);
+  background-color: var(--brandy-red);
 }
