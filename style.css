@@ -39,6 +39,9 @@ body {
   justify-content: center;
   align-items: center;
 
+  width: 100vw;
+  min-height: 1955px;
+
   background: var(--eggshell);
 }
 
@@ -298,6 +301,9 @@ hr {
 }
 
 @media (max-width: 375px) {
+  body {
+    min-height: 2043px;
+  }
   .recipe-page {
     gap: 0;
 
