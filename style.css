@@ -52,7 +52,7 @@ hr {
   height: 1px;
   border: 0;
 
-  background-color: #e3ddd7;
+  background-color: var(--white-coffee);
 }
 
 .recipe-page {
@@ -95,7 +95,8 @@ hr {
   line-height: 100%;
 }
 
-.header > p {
+.header > p,
+.nutrition > p {
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -171,14 +172,16 @@ hr {
 }
 
 .ingredients,
-.instructions {
+.instructions,
+.nutrition {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .ingredients > h2,
-.instructions > h2 {
+.instructions > h2,
+.nutrition > h2 {
   font-family: 'Young Serif', sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -239,4 +242,53 @@ hr {
 
   border-radius: 50%;
   background-color: var(--brandy-red);
+}
+
+.nutrition > table {
+  display: block;
+}
+
+.nutrition > table > tbody {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 36px 48px 48px 36px;
+}
+
+.nutrition > table > tbody > tr {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 12px 32px;
+
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.nutrition > table > tbody > tr:first-child {
+  padding-top: 0;
+}
+
+.nutrition > table > tbody > tr:last-child {
+  padding-bottom: 0;
+}
+
+.nutrition > table > tbody > tr:not(:last-child) {
+  border-bottom: 1px solid var(--white-coffee);
+}
+
+.nutrition > table > tbody > tr > td {
+  flex-basis: 288px;
+}
+
+.nutrition > table > tbody > tr > td:first-child {
+  font-weight: 400;
+  color: var(--wenge-brown);
+}
+
+.nutrition > table > tbody > tr > td:last-child {
+  font-weight: 700;
+  color: var(--brandy-red);
 }
