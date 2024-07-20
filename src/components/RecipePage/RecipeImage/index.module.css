@@ -1,0 +1,3 @@
+.recipe-image {
+  @apply relative w-full h-[300px] rounded-xl overflow-hidden;
+}
