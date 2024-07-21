@@ -1,4 +1,4 @@
-import RecipeContent from '../RecipeContent';
+import RecipeContent from './RecipeContent';
 import styles from './index.module.css';
 import RecipeImage from './RecipeImage';
 
