@@ -72,6 +72,12 @@ const config: Config = {
           fontWeight: '400',
           lineHeight: '150%',
         },
+        '.text-preset-4-bold': {
+          fontFamily: 'var(--font-outfit)',
+          fontSize: '16px',
+          fontWeight: '700',
+          lineHeight: '150%',
+        },
         '.text-preset-5': {
           fontFamily: 'var(--font-outfit)',
           fontSize: '16px',
