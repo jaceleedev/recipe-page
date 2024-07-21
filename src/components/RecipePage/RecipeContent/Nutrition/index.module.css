@@ -1,0 +1,27 @@
+.nutrition {
+  @apply flex flex-col items-start gap-300;
+
+  .heading {
+    @apply text-preset-2 text-brown-800;
+  }
+
+  .description {
+    @apply text-preset-4 text-stone-600;
+  }
+
+  .info {
+    @apply flex flex-col items-start self-stretch gap-150;
+  }
+
+  .row {
+    @apply flex items-center self-stretch gap-200 px-400;
+  }
+
+  .label {
+    @apply w-full text-preset-4 text-stone-600;
+  }
+
+  .value {
+    @apply w-full text-preset-4-bold text-brown-800;
+  }
+}
