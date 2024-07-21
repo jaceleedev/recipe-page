@@ -1,3 +1,4 @@
+import RecipeContent from '../RecipeContent';
 import styles from './index.module.css';
 import RecipeImage from './RecipeImage';
 
@@ -8,6 +9,7 @@ function RecipePage() {
         src={'/assets/images/image-omelette.jpeg'}
         alt={'simple omelette'}
       />
+      <RecipeContent />
     </div>
   );
 }
