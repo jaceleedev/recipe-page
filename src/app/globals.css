@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply flex justify-center items-center bg-stone-100;
+  @apply flex justify-center items-center w-screen min-h-screen py-1600 bg-stone-100;
 }
