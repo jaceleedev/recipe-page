@@ -1,0 +1,27 @@
+.instructions {
+  @apply flex flex-col items-start gap-300;
+
+  .heading {
+    @apply text-preset-2 text-brown-800;
+  }
+
+  .list {
+    @apply flex flex-col items-start gap-100;
+  }
+
+  .item {
+    @apply flex items-start gap-200 pl-100;
+  }
+
+  .order {
+    @apply text-preset-4-bold text-brown-800 h-full;
+  }
+
+  .description {
+    @apply text-preset-4 text-stone-600;
+  }
+
+  .title {
+    @apply text-preset-4-bold text-stone-600;
+  }
+}

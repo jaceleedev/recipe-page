@@ -1,6 +1,7 @@
 import Divider from './Divider';
 import styles from './index.module.css';
 import Ingredients from './Ingredients';
+import Instructions from './Instructions';
 import PreparationTime from './PreparationTime';
 import RecipeHeader from './RecipeHeader';
 
@@ -11,6 +12,7 @@ function RecipeContent() {
       <PreparationTime />
       <Ingredients />
       <Divider />
+      <Instructions />
     </div>
   );
 }
