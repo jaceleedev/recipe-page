@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import styles from './index.module.css';
 
 const preparationData = [
   { label: 'Total:', content: 'Approximately 10 minutes' },
@@ -9,27 +8,30 @@ const preparationData = [
 
 function PreparationTime() {
   return (
-    <div className={styles.preparationTime}>
-      <h2 className={styles.heading}>Preparation time</h2>
-      <ul className={styles.list}>
+    <section className="flex flex-col items-start gap-200 p-300 rounded-xl bg-rose-50">
+      <h2 className="text-preset-3 text-rose-800">Preparation time</h2>
+      <ul className="flex flex-col items-start gap-100 w-full">
         {preparationData.map((item) => (
-          <li key={item.label} className={styles.item}>
-            <div className={styles.ellipse}>
+          <li
+            key={item.label}
+            className="flex items-center gap-200 pl-100 w-full"
+          >
+            <div className="flex items-center w-4 h-full">
               <Image
-                src={'/assets/images/ellipse.svg'}
-                alt={'ellipse'}
+                src="/assets/images/ellipse.svg"
+                alt=""
                 width={4}
                 height={4}
                 priority
               />
             </div>
-            <p className={styles.content}>
-              <span className={styles.label}>{item.label}</span> {item.content}
+            <p className="text-preset-4">
+              <span className="font-bold">{item.label}</span> {item.content}
             </p>
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 
