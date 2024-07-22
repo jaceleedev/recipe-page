@@ -1,5 +1,3 @@
-import styles from './index.module.css';
-
 const instructionsData = [
   {
     title: 'Beat the eggs',
@@ -34,20 +32,27 @@ const instructionsData = [
 
 function Instructions() {
   return (
-    <div className={styles.instructions}>
-      <h2 className={styles.heading}>Instructions</h2>
-      <ol className={styles.list}>
+    <section className="flex flex-col items-start gap-300">
+      <h2 className="text-preset-2 text-brown-800">Instructions</h2>
+      <ol className="flex flex-col items-start gap-100">
         {instructionsData.map((instruction, index) => (
-          <li className={styles.item} key={instruction.title}>
-            <span className={styles.order}>{index + 1}.</span>
-            <p className={styles.description}>
-              <span className={styles.title}>{instruction.title}: </span>
+          <li
+            className="flex items-start gap-200 pl-100"
+            key={instruction.title}
+          >
+            <span className="text-preset-4-bold text-brown-800 h-full">
+              {index + 1}.
+            </span>
+            <p className="text-preset-4 text-stone-600">
+              <span className="text-preset-4-bold text-stone-600">
+                {instruction.title}:{' '}
+              </span>
               {instruction.description}
             </p>
           </li>
         ))}
       </ol>
-    </div>
+    </section>
   );
 }
 
