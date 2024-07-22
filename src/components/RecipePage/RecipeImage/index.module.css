@@ -1,3 +1,16 @@
 .recipe-image {
   @apply relative w-full h-[300px] rounded-xl overflow-hidden;
+
+  @screen mobile {
+    @apply h-[171px];
+  }
+}
+
+.img {
+  @screen tablet {
+    @apply object-cover;
+  }
+
+  @screen mobile {
+  }
 }

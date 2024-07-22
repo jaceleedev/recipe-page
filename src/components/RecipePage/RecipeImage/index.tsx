@@ -9,7 +9,7 @@ interface RecipeImageProps {
 function RecipeImage({ src, alt }: RecipeImageProps) {
   return (
     <div className={styles['recipe-image']}>
-      <Image src={src} alt={alt} fill priority />
+      <Image src={src} alt={alt} fill priority className={styles.img} />
     </div>
   );
 }
