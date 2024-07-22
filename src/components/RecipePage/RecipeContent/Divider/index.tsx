@@ -1,7 +1,5 @@
-import styles from './index.module.css';
-
 function Divider() {
-  return <hr className={styles.divider} />;
+  return <hr className="w-full border-stone-150" />;
 }
 
 export default Divider;
