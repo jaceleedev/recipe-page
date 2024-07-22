@@ -1,5 +1,4 @@
 import Divider from './Divider';
-import styles from './index.module.css';
 import Ingredients from './Ingredients';
 import Instructions from './Instructions';
 import Nutrition from './Nutrition';
@@ -8,7 +7,7 @@ import RecipeHeader from './RecipeHeader';
 
 function RecipeContent() {
   return (
-    <div className={styles['recipe-content']}>
+    <article className="grid grid-cols-1 grid-rows-[auto] gap-400 mobile:px-400 mobile:py-500">
       <RecipeHeader />
       <PreparationTime />
       <Ingredients />
@@ -16,7 +15,7 @@ function RecipeContent() {
       <Instructions />
       <Divider />
       <Nutrition />
-    </div>
+    </article>
   );
 }
 
