@@ -1,6 +1,5 @@
 import React from 'react';
 import Divider from '../Divider';
-import styles from './index.module.css';
 
 const nutritionData = [
   { label: 'Calories', value: '277kcal' },
@@ -11,24 +10,28 @@ const nutritionData = [
 
 function Nutrition() {
   return (
-    <div className={styles.nutrition}>
-      <h2 className={styles.heading}>Nutrition</h2>
-      <p className={styles.description}>
+    <section className="flex flex-col items-start gap-300">
+      <h2 className="text-preset-2 text-brown-800">Nutrition</h2>
+      <p className="text-preset-4 text-stone-600">
         The table below shows nutritional values per serving without the
         additional fillings.
       </p>
-      <div className={styles.info}>
+      <div className="flex flex-col items-start self-stretch gap-150">
         {nutritionData.map((nutrition, index) => (
           <React.Fragment key={nutrition.label}>
-            <div className={styles.row}>
-              <span className={styles.label}>{nutrition.label}</span>
-              <span className={styles.value}>{nutrition.value}</span>
+            <div className="flex items-center self-stretch gap-200 px-400">
+              <span className="w-full text-preset-4 text-stone-600">
+                {nutrition.label}
+              </span>
+              <span className="w-full text-preset-4-bold text-brown-800">
+                {nutrition.value}
+              </span>
             </div>
             {index < nutritionData.length - 1 && <Divider />}
           </React.Fragment>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
