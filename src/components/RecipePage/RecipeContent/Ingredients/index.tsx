@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import styles from './index.module.css';
 
 const ingredientsData = [
   '2-3 large eggs',
@@ -11,25 +10,25 @@ const ingredientsData = [
 
 function Ingredients() {
   return (
-    <div className={styles.ingredients}>
-      <h2 className={styles.heading}>Ingredients</h2>
-      <ul className={styles.list}>
+    <section className="flex flex-col items-start gap-300">
+      <h2 className="self-stretch text-preset-2 text-brown-800">Ingredients</h2>
+      <ul className="flex flex-col items-start gap-100 w-full">
         {ingredientsData.map((item) => (
-          <li className={styles.item} key={item}>
-            <div className={styles.ellipse}>
+          <li className="flex items-center gap-200 pl-100 w-full" key={item}>
+            <div className="flex items-center w-4 h-full">
               <Image
-                src={'/assets/images/ellipse.svg'}
-                alt={'ellipse'}
+                src="/assets/images/ellipse.svg"
+                alt=""
                 width={4}
                 height={4}
                 priority
               />
             </div>
-            <p className={styles.content}>{item}</p>
+            <p className="w-full text-preset-4 text-stone-600">{item}</p>
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 
