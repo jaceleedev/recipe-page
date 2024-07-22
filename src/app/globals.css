@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply flex justify-center items-center w-screen min-h-screen px-600 py-1600 bg-stone-100;
+@layer base {
+  body {
+    @apply flex justify-center items-center w-screen min-h-screen px-600 py-1600 bg-stone-100;
+  }
+}
 
-  @screen mobile {
+@screen mobile {
+  body {
     @apply p-0;
   }
 }
