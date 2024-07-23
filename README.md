@@ -28,9 +28,11 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./design/screenshot-desktop.png" height='200px'>
-<img src="./design/screenshot-tablet.png" height='200px'>
-<img src="./design/screenshot-mobile.png" height='200px'>
+<div style='display: flex; gap: 10px;'>
+<img src="./design/screenshot-desktop.png" height='300px'>
+<img src="./design/screenshot-tablet.png" height='300px'>
+<img src="./design/screenshot-mobile.png" height='300px'>
+</div>
 
 ### Links
 
